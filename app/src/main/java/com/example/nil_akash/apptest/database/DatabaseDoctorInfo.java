@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.nil_akash.apptest.modelclass.DoctorInformation;
-import com.example.nil_akash.apptest.userAuthentication.UserInformation;
 
 /**
  * Created by NiL-AkAsH on 4/10/2017.
@@ -74,4 +73,6 @@ public class DatabaseDoctorInfo {
         db.delete(DatabaseHelper.TABLE_DOCTOR_INFORMATION,WHERE,null);
         this.close();
     }
+
+
 }

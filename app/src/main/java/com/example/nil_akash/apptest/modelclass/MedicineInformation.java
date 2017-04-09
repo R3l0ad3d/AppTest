@@ -5,10 +5,23 @@ package com.example.nil_akash.apptest.modelclass;
  */
 
 public class MedicineInformation {
+    private long precsiptionId;
+
+    public long getPrecsiptionId() {
+        return precsiptionId;
+    }
+
+    public void setPrecsiptionId(long precsiptionId) {
+        this.precsiptionId = precsiptionId;
+    }
+
     private long doctorID;
     private String precsiptionDetails;
     private String precsiptionDate;
     private byte[] precsiptionImage;
+
+    public MedicineInformation() {
+    }
 
     public MedicineInformation(long doctorID, String precsiptionDetails, String precsiptionDate, byte[] precsiptionImage) {
         this.doctorID = doctorID;
