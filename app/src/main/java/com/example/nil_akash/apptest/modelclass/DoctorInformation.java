@@ -39,6 +39,8 @@ public class DoctorInformation {
         this.doctorFirstMeetDate = doctorFirstMeetDate;
     }
 
+
+
     public long getDoctorId() {
         return doctorId;
     }
