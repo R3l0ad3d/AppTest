@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.nil_akash.apptest.R;
+import com.example.nil_akash.apptest.medicine.MedicineInfoAddEdit;
 
 public class DoctorList extends AppCompatActivity {
 
@@ -15,10 +16,11 @@ public class DoctorList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_list);
+        getSupportActionBar().setTitle("Doctor List");
     }
 
     public void addDoctor(View view) {
-        Intent intent = new Intent(getApplicationContext(),DoctorAdd.class);
+        Intent intent = new Intent(getApplicationContext(),MedicineInfoAddEdit.class);
         intent.putExtra("flag","add");
         startActivity(intent);
     }

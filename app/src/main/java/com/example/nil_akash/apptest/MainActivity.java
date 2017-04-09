@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.nil_akash.apptest.doctor.DoctorList;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button singinBtn;
@@ -41,5 +43,8 @@ public class MainActivity extends AppCompatActivity {
     public void signIn(View view) {
         userName = usernameET.getText().toString();
         password = passwordET.getText().toString();
+
+        Intent intent = new Intent(getApplicationContext(),DoctorList.class);
+        startActivity(intent);
     }
 }
